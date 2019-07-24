@@ -1,0 +1,2 @@
+D:\Study\C#\Test\ConsoleApp1\Infro\obj\Debug\Infro.csprojAssemblyReference.cache
+D:\Study\C#\Test\ConsoleApp1\Infro\obj\Debug\Infro.csproj.CoreCompileInputs.cache

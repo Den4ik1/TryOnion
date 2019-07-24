@@ -1,0 +1,21 @@
+﻿using System.Collections.Generic;
+using Domain.Service;
+using Infro.InfroService;
+
+
+namespace DomaimsService.Mappers
+{
+    public static class MapperOwner
+    {
+        public static Domains MappOwnerToDomains(this Owner @this)
+        {
+            Domains domains = new Domains
+            {
+                Id = @this.OwnerID,
+                Name = @this.Name
+            };
+
+            return domains;
+        }
+    }
+}
