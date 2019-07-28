@@ -23,6 +23,12 @@ namespace DomainsService.Service
             return res.Select(_ => _.MappOwnerToDomains()).ToList();
         }
 
-       
+        public Domains GetId(int Id)
+        {
+            var res = _owner.GetId(Id);
+
+            return res.MappOwnerToDomains();
+            
+        }
     }
 }

@@ -6,5 +6,6 @@ namespace Infro.Model
     public interface IOwner
     {
         IList<Owner> GetAll();
+        Owner GetId(int Id);
     }
 }

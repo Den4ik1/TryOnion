@@ -1,6 +1,7 @@
 ﻿using Infro.InfroService;
 using Infro.Model;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Infra
 {
@@ -41,7 +42,11 @@ namespace Infra
         {
             return ownerDB;
         }
+
+        public Owner GetId(int Id)
+        {
+            return ownerDB.FirstOrDefault(_ => _.OwnerID == Id);
+        }
     }
 
 }
-

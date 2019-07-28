@@ -17,12 +17,19 @@ namespace WebApplication1.Controllers
             _domains = domains;
         }
 
-        [HttpGet, Route ("")]
+        [HttpGet, Route("")]
         public IList<OwnerModel> GetAll()
         {
             var res = _domains.GetAllD();
 
             return res.Select(_ => _.ToApllication()).ToList();
+        }
+
+        [HttpGet, Route("{Id:int}")]
+        public OwnerModel GetId(int Id)
+        {
+            var res = _domains.GetId(Id);
+            return res.ToApllication();
         }
 
     }

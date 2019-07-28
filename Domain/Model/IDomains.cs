@@ -6,6 +6,6 @@ namespace Domain.Model
     public interface IDomains
     {
         IList<Domains> GetAllD();
-       
+        Domains GetId(int Id);
     }
 }
