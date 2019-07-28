@@ -1,8 +1,5 @@
-﻿using System;
+﻿using Domain.Service;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Domain.Service
 {
@@ -10,5 +7,6 @@ namespace Domain.Service
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public IList<CarDomains> Cars { get; set; }
     }
 }

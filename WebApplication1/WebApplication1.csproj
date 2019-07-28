@@ -103,6 +103,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Mapper\DomainToApllication.cs" />
+    <Compile Include="Mapper\DomainToApllicationCar.cs" />
+    <Compile Include="Models\CarModel.cs" />
     <Compile Include="Models\OwnerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

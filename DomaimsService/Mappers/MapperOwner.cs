@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Linq;
+using DomaimsService.Mappers;
 using Domain.Service;
 using Infro.InfroService;
 
@@ -9,13 +11,12 @@ namespace DomainsService.Mappers
     {
         public static Domains MappOwnerToDomains(this Owner @this)
         {
-            Domains domains = new Domains
+            return new Domains
             {
                 Id = @this.OwnerID,
-                Name = @this.Name
+                Name = @this.Name,
+                Cars = @this.Cars.Select(_ => _.InfroToDomainsCar()).ToList()
             };
-
-            return domains;
         }
     }
 }
