@@ -8,5 +8,7 @@ namespace Domain.Model
         IList<Domains> GetAllD();
         Domains GetId(int Id);
         void AddOwnerDomain(int Id, string Name);
+        void DeleteOwnerDomain(int Id);
+        void DrpoAllOwnerDomain();
     }
 }

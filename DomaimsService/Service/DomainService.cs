@@ -35,5 +35,15 @@ namespace DomainsService.Service
         {
             _owner.AddOwnerInfro(Id, NameAdd);
         }
+
+        public void DeleteOwnerDomain(int Id)
+        {
+           _owner.DeleteOwner(Id);
+        }
+
+        public void DrpoAllOwnerDomain()
+        {
+            _owner.DrpoAllOwner();
+        }
     }
 }

@@ -32,16 +32,29 @@ namespace WebApplication1.Controllers
             return Ok(res.ToApllication());
         }
 
-        [HttpPost, Route("Add")]
-        public IHttpActionResult Post (int IdOwner = 4, string NameApi = "Vera")       
-        /*[HttpPost, Route("{Id:int}, {Name}")]
-        public void Post(int IdOwner, string NameApi)*/
-
-
+       /* [HttpPost, Route("Add")]
+        public IHttpActionResult Post (int IdOwner = 4, string NameApi = "Vera")   */    
+        [HttpPost, Route("Add/{Id:int}/{Name}")]
+        public IHttpActionResult Post(int IdOwner, string NameApi)
         {
             _domains.AddOwnerDomain(IdOwner, NameApi);
             //_domains.AddOwnerDomain(new OwnerModel { Id = IdOwner, Name = NameApi });
-            return Ok();
+            return Ok(_domains.GetId(IdOwner));
+        }
+
+        [HttpDelete, Route("Del/{Id:int}")]
+        public IHttpActionResult Del(int Id)
+        {
+            _domains.DeleteOwnerDomain(Id);
+            return NotFound();
+        }
+
+
+        [HttpDelete, Route("Drop")]
+        public IHttpActionResult Drop()
+        {
+            _domains.DrpoAllOwnerDomain();
+            return NotFound();
         }
     }
 }
