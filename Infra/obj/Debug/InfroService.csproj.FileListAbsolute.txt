@@ -1,0 +1,9 @@
+D:\Study\C#\Test\ConsoleApp1\Infra\bin\Debug\Infra.dll
+D:\Study\C#\Test\ConsoleApp1\Infra\bin\Debug\Infra.pdb
+D:\Study\C#\Test\ConsoleApp1\Infra\bin\Debug\Infro.dll
+D:\Study\C#\Test\ConsoleApp1\Infra\bin\Debug\Infro.pdb
+D:\Study\C#\Test\ConsoleApp1\Infra\obj\Debug\InfroService.csprojAssemblyReference.cache
+D:\Study\C#\Test\ConsoleApp1\Infra\obj\Debug\InfroService.csproj.CoreCompileInputs.cache
+D:\Study\C#\Test\ConsoleApp1\Infra\obj\Debug\InfroService.csproj.CopyComplete
+D:\Study\C#\Test\ConsoleApp1\Infra\obj\Debug\Infra.dll
+D:\Study\C#\Test\ConsoleApp1\Infra\obj\Debug\Infra.pdb

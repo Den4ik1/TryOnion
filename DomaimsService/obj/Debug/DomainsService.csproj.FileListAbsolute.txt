@@ -1,0 +1,11 @@
+D:\Study\C#\Test\ConsoleApp1\DomaimsService\bin\Debug\DomaimsService.dll
+D:\Study\C#\Test\ConsoleApp1\DomaimsService\bin\Debug\DomaimsService.pdb
+D:\Study\C#\Test\ConsoleApp1\DomaimsService\bin\Debug\Domain.dll
+D:\Study\C#\Test\ConsoleApp1\DomaimsService\bin\Debug\Infro.dll
+D:\Study\C#\Test\ConsoleApp1\DomaimsService\bin\Debug\Domain.pdb
+D:\Study\C#\Test\ConsoleApp1\DomaimsService\bin\Debug\Infro.pdb
+D:\Study\C#\Test\ConsoleApp1\DomaimsService\obj\Debug\DomainsService.csprojAssemblyReference.cache
+D:\Study\C#\Test\ConsoleApp1\DomaimsService\obj\Debug\DomainsService.csproj.CoreCompileInputs.cache
+D:\Study\C#\Test\ConsoleApp1\DomaimsService\obj\Debug\DomainsService.csproj.CopyComplete
+D:\Study\C#\Test\ConsoleApp1\DomaimsService\obj\Debug\DomaimsService.dll
+D:\Study\C#\Test\ConsoleApp1\DomaimsService\obj\Debug\DomaimsService.pdb

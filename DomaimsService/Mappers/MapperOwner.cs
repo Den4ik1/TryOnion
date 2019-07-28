@@ -3,7 +3,7 @@ using Domain.Service;
 using Infro.InfroService;
 
 
-namespace DomaimsService.Mappers
+namespace DomainsService.Mappers
 {
     public static class MapperOwner
     {
