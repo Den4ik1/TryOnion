@@ -30,5 +30,10 @@ namespace DomainsService.Service
             return res.MappOwnerToDomains();
             
         }
+
+        public void AddOwnerDomain(int Id, string NameAdd)
+        {
+            _owner.AddOwnerInfro(Id, NameAdd);
+        }
     }
 }

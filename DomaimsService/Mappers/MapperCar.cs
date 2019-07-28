@@ -8,12 +8,19 @@ namespace DomaimsService.Mappers
     {
         public static CarDomains InfroToDomainsCar(this Car @this)
         {
-            return new CarDomains()
+            if (@this != null)
             {
-                CarID = @this.CarID,
-                Model = @this.Model,
-                AgeMake = @this.AgeMake
-            };
+                return new CarDomains()
+                {
+                    CarID = @this.CarID,
+                    Model = @this.Model,
+                    AgeMake = @this.AgeMake
+                };
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

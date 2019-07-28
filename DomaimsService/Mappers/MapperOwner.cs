@@ -11,12 +11,24 @@ namespace DomainsService.Mappers
     {
         public static Domains MappOwnerToDomains(this Owner @this)
         {
-            return new Domains
+            if (@this.Cars != null)
             {
-                Id = @this.OwnerID,
-                Name = @this.Name,
-                Cars = @this.Cars.Select(_ => _.InfroToDomainsCar()).ToList()
-            };
+                return new Domains
+                {
+                    Id = @this.OwnerID,
+                    Name = @this.Name,
+                    Cars = @this.Cars.Select(_ => _.InfroToDomainsCar()).ToList()
+                };
+            }
+            else
+            {
+                return new Domains
+                {
+                    Id = @this.OwnerID,
+                    Name = @this.Name,
+                    Cars = null
+                };
+            }
         }
     }
 }

@@ -7,12 +7,19 @@ namespace WebApplication1.Mapper
     {
         public static CarModel DomainToAplCar(this CarDomains @this)
         {
-            return new CarModel()
+            if (@this != null)
             {
-                CarID = @this.CarID,
-                Model = @this.Model,
-                AgeMake = @this.AgeMake
-            };
+                return new CarModel()
+                {
+                    CarID = @this.CarID,
+                    Model = @this.Model,
+                    AgeMake = @this.AgeMake
+                };
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

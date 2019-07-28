@@ -26,11 +26,22 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet, Route("{Id:int}")]
-        public OwnerModel GetId(int Id)
+        public IHttpActionResult GetId(int Id)
         {
             var res = _domains.GetId(Id);
-            return res.ToApllication();
+            return Ok(res.ToApllication());
         }
 
+        [HttpPost, Route("Add")]
+        public IHttpActionResult Post (int IdOwner = 4, string NameApi = "Vera")       
+        /*[HttpPost, Route("{Id:int}, {Name}")]
+        public void Post(int IdOwner, string NameApi)*/
+
+
+        {
+            _domains.AddOwnerDomain(IdOwner, NameApi);
+            //_domains.AddOwnerDomain(new OwnerModel { Id = IdOwner, Name = NameApi });
+            return Ok();
+        }
     }
 }

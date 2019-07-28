@@ -9,13 +9,24 @@ namespace WebApplication1.Mapper
     {
         public static OwnerModel ToApllication(this Domains @this)
         {
-
-            return new OwnerModel()
+            if (@this.Cars != null)
             {
-                Id = @this.Id,
-                Name = @this.Name,
-                Car = @this.Cars.Select(_ => _.DomainToAplCar()).ToList()
-            };
+                return new OwnerModel()
+                {
+                    Id = @this.Id,
+                    Name = @this.Name,
+                    Car = @this.Cars.Select(_ => _.DomainToAplCar()).ToList()
+                };
+            }
+            else
+            {
+                return new OwnerModel
+                {
+                    Id = @this.Id,
+                    Name = @this.Name,
+                    Car = null
+                };
+            }
         }
     }
 }

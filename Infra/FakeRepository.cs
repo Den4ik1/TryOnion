@@ -9,7 +9,7 @@ namespace Infra
     {
 
         #region //ownerDB 
-        public List<Owner> ownerDB = new List<Owner>()
+        public static List<Owner> ownerDB = new List<Owner>()
        {
          new Owner {OwnerID = 1,  Name = "Ivan",
                            Cars = new Car[]
@@ -46,6 +46,11 @@ namespace Infra
         public Owner GetId(int Id)
         {
             return ownerDB.FirstOrDefault(_ => _.OwnerID == Id);
+        }
+
+        public void AddOwnerInfro(int Id, string NameAdd)
+        {
+            ownerDB.Add (new Owner {OwnerID = Id, Name = NameAdd, Cars = null});
         }
     }
 

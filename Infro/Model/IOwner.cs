@@ -7,5 +7,6 @@ namespace Infro.Model
     {
         IList<Owner> GetAll();
         Owner GetId(int Id);
+        void AddOwnerInfro(int Id, string Name);
     }
 }
