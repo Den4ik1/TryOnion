@@ -32,15 +32,32 @@ namespace WebApplication1.Controllers
             return Ok(res.ToApllication());
         }
 
-       /* [HttpPost, Route("Add")]
-        public IHttpActionResult Post (int IdOwner = 4, string NameApi = "Vera")   */    
-        [Route("Add/Id/{IdOwner:int}/Name/{NameApi}"), HttpPost]
-        public IHttpActionResult Post(int IdOwner, string NameApi)
+        [HttpPost, Route("AddOwner/Id/{IdOwner:int}/Name/{NameApi}")]
+        public IHttpActionResult PostOw(int IdOwner, string NameApi)
         {
             _domains.AddOwnerDomain(IdOwner, NameApi);
-            //_domains.AddOwnerDomain(new OwnerModel { Id = IdOwner, Name = NameApi });
             return Ok(_domains.GetId(IdOwner));
         }
+
+        //Не переходит сюда.
+        /*
+        [HttpPost, Route("AddCar/OwnerId/{DomainownerId:int}/CarId/{DomainCarId:int}/Model/{DomainAddModel}/AgeMake/{DomainAddAgeMake}")]
+        public IHttpActionResult PathcCar(int DomainownerId, int DomainCarId, string DomainAddModel, string DomainAddAgeMake)
+        {
+            _domains.AddCarDomain(DomainownerId, DomainCarId, DomainAddModel, DomainAddAgeMake);
+            return Ok(_domains.GetId(DomainCarId));
+        }
+        */
+
+        //Не реализовано 
+        /*
+       [HttpPatch, Route("EditOwner/OwnerId/{DomainownerId:int}/Name/{NameApi}")]
+       public IHttpActionResult PathcCar(int DomainownerId, string NameApie)
+       {
+           _domains.PathcCarDomain(DomainownerId, DomainownerId, NameApie);
+           return Ok(_domains.GetId(DomainownerId));
+       }
+       */
 
         [HttpDelete, Route("Del/{Id:int}")]
         public IHttpActionResult Del(int Id)
