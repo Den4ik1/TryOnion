@@ -34,7 +34,7 @@ namespace WebApplication1.Controllers
 
        /* [HttpPost, Route("Add")]
         public IHttpActionResult Post (int IdOwner = 4, string NameApi = "Vera")   */    
-        [HttpPost, Route("Add/{Id:int}/{Name}")]
+        [Route("Add/Id/{IdOwner:int}/Name/{NameApi}"), HttpPost]
         public IHttpActionResult Post(int IdOwner, string NameApi)
         {
             _domains.AddOwnerDomain(IdOwner, NameApi);

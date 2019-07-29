@@ -53,6 +53,11 @@ namespace Infra
             ownerDB.Add (new Owner {OwnerID = Id, Name = NameAdd, Cars = null});
         }
 
+        public void AddCarAddOwnerInfro(int ownerId, int CarID, string Model, string AgeMake)
+        {
+
+        }
+
         public void DeleteOwner(int Id)
         {
             ownerDB = ownerDB.Where(_ => _.OwnerID != Id).ToList();

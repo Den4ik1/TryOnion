@@ -10,5 +10,6 @@ namespace Domain.Model
         void AddOwnerDomain(int Id, string Name);
         void DeleteOwnerDomain(int Id);
         void DrpoAllOwnerDomain();
+
     }
 }
