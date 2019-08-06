@@ -45,7 +45,7 @@ namespace WebApplication1.Controllers
         public IHttpActionResult PathcCar(int DomainownerId, int DomainCarId, string DomainAddModel, string DomainAddAgeMake)
         {
             _domains.AddCarDomain(DomainownerId, DomainCarId, DomainAddModel, DomainAddAgeMake);
-            return Ok(_domains.GetId(DomainCarId));
+            return Ok(_domains.GetId(DomainownerId));
         }
         
 
