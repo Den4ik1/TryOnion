@@ -40,14 +40,14 @@ namespace WebApplication1.Controllers
         }
 
         //Не переходит сюда.
-        /*
+        
         [HttpPost, Route("AddCar/OwnerId/{DomainownerId:int}/CarId/{DomainCarId:int}/Model/{DomainAddModel}/AgeMake/{DomainAddAgeMake}")]
         public IHttpActionResult PathcCar(int DomainownerId, int DomainCarId, string DomainAddModel, string DomainAddAgeMake)
         {
             _domains.AddCarDomain(DomainownerId, DomainCarId, DomainAddModel, DomainAddAgeMake);
             return Ok(_domains.GetId(DomainCarId));
         }
-        */
+        
 
         //Не реализовано 
         /*

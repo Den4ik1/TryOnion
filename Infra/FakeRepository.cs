@@ -57,12 +57,26 @@ namespace Infra
         {
             int index = ownerDB.FindIndex(_ => _.OwnerID == ownerId);
             if (index != 0)
-                ownerDB[index].Cars.Add(new Car()
+                if (ownerDB[index].Cars != null)
                 {
-                    CarID = AddCarID,
-                    Model = AddModel,
-                    AgeMake = AddAgeMake
-                });
+                    ownerDB[index].Cars.Add(new Car()
+                    {
+                        CarID = AddCarID,
+                        Model = AddModel,
+                        AgeMake = AddAgeMake
+                    });
+                }
+                else
+                {
+                    ownerDB[index].Cars = new List<Car>()
+                    {
+                        new Car(){
+                        CarID = AddCarID,
+                        Model = AddModel,
+                        AgeMake = AddAgeMake
+                        }
+                    };
+                }
         }
 
         public void DeleteOwner(int Id)
