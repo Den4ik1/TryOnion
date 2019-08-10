@@ -16,12 +16,17 @@ namespace Infra.Repository
         }
 
 
-
-        public void AddCar(int? ownerId, int AddCarID, string AddModel, string AddAgeMake)
+        /*public void AddCar(int? ownerId, int AddCarID, string AddModel, string AddAgeMake)
         {
-           
-                throw new System.NotImplementedException();
+                ;
+        }*/
+        public void UpDate(int IdOwner, string name)
+        {
+            var owner = _context.Owners.FirstOrDefault(_ => _.OwnerID == IdOwner);
+            owner.Name = name;
+            _context.SaveChanges();
         }
+
 
         public void AddOwnerInfro(int Id, string Name)
         {

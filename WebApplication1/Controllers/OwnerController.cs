@@ -25,6 +25,13 @@ namespace WebApplication1.Controllers
             return res.Select(_ => _.ToApllication()).ToList();
         }
 
+        [HttpPut, Route("Update/{IdOwner:int}/{nameOwner}")]
+        public IHttpActionResult PutOwner(int IdOwner, string nameOwner)
+        {
+            _domains.UpDateDomain(IdOwner, nameOwner);
+            return Ok();
+        }
+
         [HttpGet, Route("{Id:int}")]
         public IHttpActionResult GetId(int Id)
         {
@@ -40,14 +47,14 @@ namespace WebApplication1.Controllers
         }
 
         //Не переходит сюда.
-        
+        /*
         [HttpPost, Route("AddCar/OwnerId/{DomainownerId:int}/CarId/{DomainCarId:int}/Model/{DomainAddModel}/AgeMake/{DomainAddAgeMake}")]
         public IHttpActionResult PathcCar(int DomainownerId, int DomainCarId, string DomainAddModel, string DomainAddAgeMake)
         {
             _domains.AddCarDomain(DomainownerId, DomainCarId, DomainAddModel, DomainAddAgeMake);
             return Ok(_domains.GetId(DomainownerId));
         }
-        
+        */
 
         //Не реализовано 
         /*

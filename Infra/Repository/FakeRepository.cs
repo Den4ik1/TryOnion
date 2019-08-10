@@ -4,14 +4,15 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace Infra
-{/*
+{
     public class FakeRepository : IOwner
     {
 
         #region //ownerDB 
-        public static List<Owner> ownerDB = new List<Owner>()
+        
+        public List<Owner> ownerDB = new List<Owner>()
        {
-         new Owner {OwnerID = 1,  Name = "Ivan",
+         new Owner {OwnerID = 3,  Name = "Ivan",
                            Cars = new Car[]
                            {
                                new Car { CarID = 1, Model = "Mazda", AgeMake = "1998"},
@@ -19,7 +20,7 @@ namespace Infra
                            }
          },
 
-         new Owner {OwnerID = 2,  Name = "Alex",
+         new Owner {OwnerID = 4,  Name = "Alex",
                            Cars = new Car[]
                            {
                                new Car { CarID = 1, Model = "BMW", AgeMake = "1994"},
@@ -28,7 +29,7 @@ namespace Infra
                            }
          },
 
-          new Owner {OwnerID = 3,  Name = "Jan",
+          new Owner {OwnerID = 5,  Name = "Jan",
                            Cars = new Car[]
                            {
                                new Car { CarID = 1, Model = "Mercedes", AgeMake = "2016"},
@@ -88,6 +89,11 @@ namespace Infra
         {
             ownerDB.Clear();
         }
-    }*/
+
+        public void UpDate(int IdOwner, string name)
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 
 }

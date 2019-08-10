@@ -7,8 +7,9 @@ namespace Domain.Model
     {
         IList<Domains> GetAllD();
         Domains GetId(int Id);
+        void UpDateDomain(int IdOwnerDomeain, string nameDomain);
         void AddOwnerDomain(int Id, string Name);
-        void AddCarDomain(int? DomainownerId, int DomainCarId, string DomainAddModel, string DomainAddAgeMake);
+        //void AddCarDomain(int? DomainownerId, int DomainCarId, string DomainAddModel, string DomainAddAgeMake);
         void DeleteOwnerDomain(int Id);
         void DrpoAllOwnerDomain();
 

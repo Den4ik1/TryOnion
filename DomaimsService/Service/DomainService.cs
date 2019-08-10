@@ -35,12 +35,12 @@ namespace DomainsService.Service
         {
             _owner.AddOwnerInfro(Id, NameAdd);
         }
-
+        /*
         public void AddCarDomain(int? DomainownerId, int DomainCarId, string DomainAddModel, string DomainAddAgeMake)
         {
             _owner.AddCar(DomainownerId, DomainCarId, DomainAddModel, DomainAddAgeMake);
         }
-
+        */
 
         public void DeleteOwnerDomain(int Id)
         {
@@ -52,6 +52,11 @@ namespace DomainsService.Service
             _owner.DrpoAllOwner();
         }
 
-       
+        public void UpDateDomain(int IdOwnerDomeain, string nameDomain)
+        {
+            _owner.UpDate(IdOwnerDomeain, nameDomain);
+        }
+
+  
     }
 }
