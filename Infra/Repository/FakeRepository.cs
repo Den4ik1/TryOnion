@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace Infra
-{
+{/*
     public class FakeRepository : IOwner
     {
 
@@ -47,7 +47,7 @@ namespace Infra
         {
             return ownerDB.FirstOrDefault(_ => _.OwnerID == Id);
         }
-
+        
         public void AddOwnerInfro(int Id, string NameAdd)
         {
             ownerDB.Add (new Owner {OwnerID = Id, Name = NameAdd, Cars = null});
@@ -88,6 +88,6 @@ namespace Infra
         {
             ownerDB.Clear();
         }
-    }
+    }*/
 
 }

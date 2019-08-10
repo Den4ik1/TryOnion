@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InfroService\Car.cs" />
+    <Compile Include="InfroService\Logger.cs" />
     <Compile Include="InfroService\Owner.cs" />
     <Compile Include="Model\ICar.cs" />
+    <Compile Include="Model\ILogger.cs" />
     <Compile Include="Model\IOwner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,6 +1,6 @@
-D:\Study\C#\Test\ConsoleApp1\Infro\obj\Debug\Infro.csprojAssemblyReference.cache
-D:\Study\C#\Test\ConsoleApp1\Infro\obj\Debug\Infro.csproj.CoreCompileInputs.cache
 D:\Study\C#\Test\ConsoleApp1\Infro\bin\Debug\Infro.dll
 D:\Study\C#\Test\ConsoleApp1\Infro\bin\Debug\Infro.pdb
+D:\Study\C#\Test\ConsoleApp1\Infro\obj\Debug\Infro.csproj.CoreCompileInputs.cache
 D:\Study\C#\Test\ConsoleApp1\Infro\obj\Debug\Infro.dll
 D:\Study\C#\Test\ConsoleApp1\Infro\obj\Debug\Infro.pdb
+D:\Study\C#\Test\ConsoleApp1\Infro\obj\Debug\Infro.csprojAssemblyReference.cache
