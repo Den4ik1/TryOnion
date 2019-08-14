@@ -46,6 +46,7 @@
     <Compile Include="Mappers\MapperOwner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\DomainService.cs" />
+    <Compile Include="Service\ExceptionServiceDomains.cs" />
     <Compile Include="Service\LoggerServiceDomains.cs" />
   </ItemGroup>
   <ItemGroup>

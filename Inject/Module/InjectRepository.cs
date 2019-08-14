@@ -1,5 +1,4 @@
 ﻿using Infro.Model;
-using Infra;
 using Microsoft.Practices.Unity;
 using Microsoft.EntityFrameworkCore;
 using Infra.Contexts;
@@ -24,7 +23,8 @@ namespace Inject.Module
 
             container.RegisterType<MyContext>(new HierarchicalLifetimeManager(), new InjectionConstructor(optionsBuilder.Options));
 
-
+            container.RegisterType<ILogger, LoggerRepository>(new ContainerControlledLifetimeManager());
+            container.RegisterType<IException, ExceptionRepository>(new ContainerControlledLifetimeManager());
         }
     }
 }

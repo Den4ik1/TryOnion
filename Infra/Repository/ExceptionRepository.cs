@@ -5,18 +5,18 @@ using Infro.Model;
 
 namespace Infra.Repository
 {
-    public class LoggerRepository : ILogger
+    public class ExceptionRepository : IException
     {
         private readonly MyContext _context;
 
-        public LoggerRepository(MyContext context)
+        public ExceptionRepository(MyContext context)
         {
             _context = context;
         }
 
-        public void RequestInformation(Logger Request)
+        public void ExceptionInformation(ExceptionLog exception)
         {
-            _context.Logs.Add(Request);
+            _context.Add(exception);
             _context.SaveChanges();
         }
     }

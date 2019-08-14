@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web.Http;
 using WebApplication1.Mapper;
 using WebApplication1.Models;
+using WebApplication1.Attributes;
+
 
 namespace WebApplication1.Controllers
 {
@@ -17,6 +19,7 @@ namespace WebApplication1.Controllers
             _domains = domains;
         }
 
+        //[CustomActionLoggerAttributes, CustomExceptionLoggerAttributes]
         [HttpGet, Route("")]
         public IList<OwnerModel> GetAll()
         {
@@ -24,7 +27,7 @@ namespace WebApplication1.Controllers
 
             return res.Select(_ => _.ToApllication()).ToList();
         }
-
+       
         [HttpPut, Route("Update/{IdOwner:int}/{nameOwner}")]
         public IHttpActionResult PutOwner(int IdOwner, string nameOwner)
         {

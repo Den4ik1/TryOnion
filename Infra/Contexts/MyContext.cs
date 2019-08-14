@@ -10,6 +10,9 @@ namespace Infra.Contexts
 
         public virtual DbSet<Logger> Logs { get; set; }
 
+        public virtual DbSet<ExceptionLog> ExceptionLogs { get; set; }
+
+
         public MyContext(DbContextOptions<MyContext> options) : base (options)
         {
 
@@ -19,7 +22,8 @@ namespace Infra.Contexts
         {
             base.OnModelCreating(modelBuilder
                 .ApplyConfiguration(new OwnerConfiguration())
-                .ApplyConfiguration(new LogConfigyration())
+                .ApplyConfiguration(new LogConfiguration())
+                .ApplyConfiguration(new ExceptionLogConfiguration())
 );
         }
     }

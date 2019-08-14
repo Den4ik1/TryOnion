@@ -6,7 +6,7 @@ namespace DomaimsService.Mappers
 {
     static public class MapperLogger
     {
-       /* static public Logger ConvertToDomain(this Infro.InfroService.Logger @this)
+        /*static public Logger ConvertToDomain(this Infro.InfroService.Logger @this)
         {
             return (new Domain.Service.Logger()
             {
@@ -14,8 +14,8 @@ namespace DomaimsService.Mappers
                 Controller = @this.Controller,
                 Request = @this.Request
             });
-        }*/
-
+        }
+        */
             
     }
 }

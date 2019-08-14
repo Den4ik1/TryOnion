@@ -9,7 +9,6 @@ namespace Infra.Configuration
         public void Configure(EntityTypeBuilder<Owner> builder)
         {
             builder.ToTable("Owners");
-
             builder.HasKey(_ => _.OwnerID);
         }
     }

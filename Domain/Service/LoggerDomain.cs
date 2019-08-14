@@ -1,9 +1,9 @@
 ﻿
 namespace Domain.Service
 {
-    public class Logger
+    public class LoggerDomain
     {
-        public int AddressIP { get; set; }
+        public string AddressIP { get; set; }
         public string Controller { get; set; }
         public string Request { get; set; }
     }

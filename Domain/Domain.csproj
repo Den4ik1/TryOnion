@@ -43,10 +43,12 @@
   <ItemGroup>
     <Compile Include="Model\ICarDomains.cs" />
     <Compile Include="Model\IDomains.cs" />
+    <Compile Include="Model\IExceptionDomains.cs" />
     <Compile Include="Model\ILoggerDomains.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\CarDomains.cs" />
     <Compile Include="Service\Domains.cs" />
+    <Compile Include="Service\ExceptionDomains.cs" />
     <Compile Include="Service\LoggerDomain.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
