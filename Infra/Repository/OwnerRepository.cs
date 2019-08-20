@@ -16,10 +16,6 @@ namespace Infra.Repository
         }
 
 
-        /*public void AddCar(int? ownerId, int AddCarID, string AddModel, string AddAgeMake)
-        {
-                ;
-        }*/
         public void UpDate(int IdOwner, string name)
         {
             var owner = _context.Owners.FirstOrDefault(_ => _.OwnerID == IdOwner);
@@ -28,10 +24,10 @@ namespace Infra.Repository
         }
 
 
-        public void AddOwnerInfro(int Id, string Name)
+        public void AddOwnerInfro(int Id, string NameOwner)
         {
             
-            _context.Owners.Add(new Owner() { Name = Name, Cars = null} );
+            _context.Owners.Add(new Owner() { Name = NameOwner, Cars = null} );
             _context.SaveChanges();
         }
 

@@ -19,7 +19,7 @@ namespace WebApplication1.Controllers
             _domains = domains;
         }
 
-        //[CustomActionLoggerAttributes, CustomExceptionLoggerAttributes]
+        [CustomActionLoggerAttributes, CustomExceptionLoggerAttributes]
         [HttpGet, Route("")]
         public IList<OwnerModel> GetAll()
         {

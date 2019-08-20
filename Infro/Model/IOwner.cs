@@ -8,7 +8,7 @@ namespace Infro.Model
         IList<Owner> GetAll();
         Owner GetId(int Id);
         void UpDate(int IdOwner, string name);
-        void AddOwnerInfro(int Id, string Name);
+        void AddOwnerInfro(int Id, string NameOwner);
         //void AddCar(int? ownerId, int AddCarID, string AddModel, string AddAgeMake);
         void DeleteOwner(int Id);
         void DrpoAllOwner();

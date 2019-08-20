@@ -11,7 +11,7 @@ namespace Inject.Module
     {
         public void Registre(IUnityContainer container)
         {
-            container.RegisterType<IOwner, OwnerRepository> (new ContainerControlledLifetimeManager());
+            container.RegisterType<IOwner, OwnerRepository> (new HierarchicalLifetimeManager());
 
 
 
@@ -23,8 +23,8 @@ namespace Inject.Module
 
             container.RegisterType<MyContext>(new HierarchicalLifetimeManager(), new InjectionConstructor(optionsBuilder.Options));
 
-            container.RegisterType<ILogger, LoggerRepository>(new ContainerControlledLifetimeManager());
-            container.RegisterType<IException, ExceptionRepository>(new ContainerControlledLifetimeManager());
+            container.RegisterType<ILogger, LoggerRepository>(new HierarchicalLifetimeManager());
+            container.RegisterType<IException, ExceptionRepository>(new HierarchicalLifetimeManager());
         }
     }
 }

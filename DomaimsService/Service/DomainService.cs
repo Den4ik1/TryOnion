@@ -4,6 +4,7 @@ using Domain.Service;
 using System.Linq;
 using DomainsService.Mappers;
 using Domain.Model;
+using System;
 
 namespace DomainsService.Service
 {
@@ -19,7 +20,7 @@ namespace DomainsService.Service
         public IList<Domains> GetAllD()
         {
             var res = _owner.GetAll();
-
+           // throw new IndexOutOfRangeException();
             return res.Select(_ => _.MappOwnerToDomains()).ToList();
         }
 

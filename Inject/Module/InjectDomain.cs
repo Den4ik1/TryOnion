@@ -9,9 +9,9 @@ namespace Inject.Module
     {
         public void Registre(IUnityContainer container)
         {
-            container.RegisterType<IDomains, DomainService> (new ContainerControlledLifetimeManager());
-            container.RegisterType<ILoggerDomains, LoggerServiceDomains>(new ContainerControlledLifetimeManager());
-            container.RegisterType<IExceptionDomains, ExceptionServiceDomains>(new ContainerControlledLifetimeManager());
+            container.RegisterType<IDomains, DomainService> (new HierarchicalLifetimeManager());
+            container.RegisterType<ILoggerDomains, LoggerServiceDomains>(new HierarchicalLifetimeManager());
+            container.RegisterType<IExceptionDomains, ExceptionServiceDomains>(new HierarchicalLifetimeManager());
         }
     }
 }
