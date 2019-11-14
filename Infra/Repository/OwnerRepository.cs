@@ -1,6 +1,7 @@
 ﻿using Infra.Contexts;
 using Infro.InfroService;
 using Infro.Model;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -51,7 +52,7 @@ namespace Infra.Repository
 
         public IList<Owner> GetAll()
         {
-            return _context.Owners.ToList();
+            return _context.Owners.Include(_ => _.Cars).ToList();
         }
 
         public Owner GetId(int Id)

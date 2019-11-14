@@ -23,8 +23,7 @@ namespace Infra.Contexts
             base.OnModelCreating(modelBuilder
                 .ApplyConfiguration(new OwnerConfiguration())
                 .ApplyConfiguration(new LogConfiguration())
-                .ApplyConfiguration(new ExceptionLogConfiguration())
-);
+                .ApplyConfiguration(new ExceptionLogConfiguration()));
         }
     }
 }

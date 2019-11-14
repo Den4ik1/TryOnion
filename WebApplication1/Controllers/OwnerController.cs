@@ -24,7 +24,6 @@ namespace WebApplication1.Controllers
         public IList<OwnerModel> GetAll()
         {
             var res = _domains.GetAllD();
-
             return res.Select(_ => _.ToApllication()).ToList();
         }
        
